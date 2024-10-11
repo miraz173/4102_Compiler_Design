@@ -1,0 +1,35 @@
+func_begin
+
+design intvar y;
+
+
+while design intvar t = 4; t<7; calc t+1 to t;:
+    visible t;
+    calc 3 to y;
+    while y<6:
+        visible y;
+        calc y+1 to y;
+;
+;
+
+design intvar z=6;
+design intvar x;
+
+read x;
+visible x;
+
+read "str";
+
+check x>5:
+    visible x;
+;
+default:
+    visible 0;
+;
+
+visible x+y+3+z;
+
+calc z*3 to z;
+visible z;
+
+func_end

@@ -1,0 +1,21 @@
+make func main
+
+func_begin
+
+design intvar x = 5;
+
+design intvar y = 7;
+
+calc x*y to x;
+
+visible x;
+
+calc 7+x to y;
+
+visible y;
+
+calc x+y*2 to x;
+
+visible x;
+
+func_end

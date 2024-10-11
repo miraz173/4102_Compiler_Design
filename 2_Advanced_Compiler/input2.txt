@@ -1,0 +1,64 @@
+func_begin
+
+design intvar x = 5;
+
+design intvar y = 7;
+
+design charvar l;
+
+read l;
+visible l;
+
+while design intvar t = 4; t<7; calc t+1 to t;:
+    design intvar z = 7;
+    calc t+2 to z;
+    visible t;
+    check y<6:
+        visible 0;
+;
+    default:
+        visible y;
+;
+    while y>6:
+        visible y;
+        calc y-1 to y;
+;
+;
+
+while y>4:
+    visible y;
+    calc y-1 to y;
+;
+
+check x>0:
+    visible x+5;
+    calc x+3 to x;
+;
+
+check y<10:
+    visible 0;
+;
+
+default:
+    visible y;
+;
+
+read x;
+
+visible x;
+
+read "any";
+
+calc x*y to x;
+
+calc x>y to y;
+
+visible y;
+
+visible x<10;
+
+visible x+y+2;
+
+visible x;
+
+func_end
