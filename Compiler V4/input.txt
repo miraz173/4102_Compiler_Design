@@ -1,0 +1,76 @@
+func_begin
+
+design strvar s;
+calc "Input: " to s;
+design strvar tr;
+calc "Triangle Size:" to tr;
+
+design intvar a;
+visible s;
+read a;
+
+visible tr;
+visible a;
+visible nl;
+
+calc " " to s;
+calc "^" to tr;
+
+while design intvar t = 0; t<a; calc t+1 to t;: //print triangle
+    while design intvar j = 0; j<a-t; calc j+1 to j;:
+        visible s;
+    ;
+
+    while design intvar j = 0; j<2*t-1; calc j+1 to j;:
+        visible tr;
+    ;
+    visible nl;
+;
+
+//i can write comments too! yay!
+calc ": " to tr;
+
+while design intvar t = 0; t<7; calc t+2 to t;:
+    visible t-2;
+    visible tr;
+    while design intvar j = 0; j<9-t; calc j+1 to j;:
+        visible j-1;
+        visible s;
+    ;
+    visible nl;
+;
+visible nl;
+
+design intvar z=6;
+
+
+calc "String Input: " to tr;
+design strvar str;
+
+visible tr;
+read str;
+
+calc "Input was: " to tr;
+visible tr;
+visible str;
+visible nl;
+
+read a;
+check a>5:
+    calc "Bigger than five. " to tr;
+;
+default:
+    calc "Smaller than five. " to tr;
+;
+visible tr;
+visible nl;
+
+visible a+3+z;
+visible nl;
+
+calc z*3 to z;
+visible z;
+visible nl;
+
+visible str;
+func_end
