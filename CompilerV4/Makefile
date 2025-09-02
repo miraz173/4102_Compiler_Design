@@ -50,3 +50,4 @@ run:
 
 finish:
 	rm output.obj parse.tab.h parse.tab.c lex.yy.c 
+
